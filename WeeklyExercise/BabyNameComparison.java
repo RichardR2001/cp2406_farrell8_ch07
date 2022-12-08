@@ -5,7 +5,7 @@ import java.util.*;
 public class BabyNameComparison {
     public static void main(String[] args)
     {
-        String fname1, fname2, fname3;
+        String fname1, fname2, fname3;      // store the firstnames
         Scanner in = new Scanner(System.in);
         System.out.print("Enter a first name: ");
         fname1 = in.nextLine();

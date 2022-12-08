@@ -8,7 +8,7 @@ public class CountWords
     {
         String str;
         Scanner in = new Scanner(System.in);
-        char ch;
+        char ch;    // store the character as ch
         int x;
         int count = 0;
         int length;
@@ -16,14 +16,14 @@ public class CountWords
         System.out.print("Enter a string: ");
         str = in.nextLine();
         length = str.length();
-        for(x=0; x<length; x++)
+        for(x=0; x<length; x++)     // using for loop to check since there is a finite number of characters
         {
             ch = str.charAt(x);
             if(ch == ' ' || ch == '.' || ch == ';' || ch == ',' || ch == '!' || ch == '-')
             {
                 ++count;
                 if (previousCharWasPunc)
-                    -- count;
+                    --count;
                 previousCharWasPunc = true;
             }
             else
